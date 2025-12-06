@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài học</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f6f8fc;
+    }
+
+    /* Banner */
+    .banner {
+        width: 100%;
+        height: 240px;
+        background: url('bài 12.jpg') center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    /* Tiêu đề giữa banner */
+    .banner-title {
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+        text-shadow: 3px 3px 10px rgba(0,0,0,0.9);
+    }
+
+    /* Nút quay về */
+    .back-btn {
+        display: inline-block;
+        margin: 25px;
+        background: #2a4d69;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .back-btn:hover {
+        background: #1d3550;
+    }
+
+    /* Tiêu đề phần */
+    h2 {
+        font-size: 32px;
+        margin-top: 40px;
+        color: #1a2e40;
+        text-align: left;
+        font-weight: 700;
+        font-family: Arial, sans-serif; /* phông bình thường */
+    }
+
+    /* Khung đề bài */
+    .problem-box {
+        background: white;
+        padding: 18px 22px;
+        border-left: 6px solid #2a4d69;
+        border-radius: 8px;
+        margin: 20px 0;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    /* Nội dung */
+    .content {
+        width: 80%;
+        max-width: 900px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+</style>
+</head>
+
+<body>
+
+<a href="https://nhungo2210028-hash.github.io/uuujij" class="back-btn">← Quay về trang chủ</a>
+
+<div class="banner">
+    <div class="banner-title">BÀI 12: TẠO BIỂU MẪU</div>
+</div>
+
+<div class="content">
+
+    <h2>LUYỆN TẬP</h2>
+
+   <div class="problem-box">
+    <b>Đề bài:</b>
+    <p>Luyện tập trang 70 Tin học 12: Lần lượt tạo các loại phần tử form và các phần tử input với những loại dữ liệu khác nhau và liệt kê ra ba ví dụ có thể sử dụng của từng loại.</p>
+       
+</div>
+    
+<pre>
+*Phần tử Form:
+-Form cơ bản:
+Ví dụ: Một biểu mẫu đăng ký tài khoản.
+&lt;form action="/register" method="post"&gt;
+  &lt;!-- Các phần tử input và nút gửi dữ liệu sẽ được thêm vào đây --&gt;
+&lt;/form&gt;
+
+-Form có phần tử select:
+Ví dụ: Form chọn quốc gia.
+&lt;form&gt;
+  &lt;label for="country"&gt;Quốc gia:&lt;/label&gt;
+  &lt;select id="country" name="country"&gt;
+    &lt;option value="vietnam"&gt;Việt Nam&lt;/option&gt;
+    &lt;option value="usa"&gt;United States&lt;/option&gt;
+    &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+    &lt;!-- Các quốc gia khác có thể được thêm vào đây --&gt;
+  &lt;/select&gt;
+&lt;/form&gt;
+
+- Form với textarea:
+Ví dụ: Một ô nhập văn bản lớn cho người dùng nhập ý kiến hoặc phản hồi.
+&lt;form&gt;
+  &lt;label for="feedback"&gt;Phản hồi:&lt;/label&gt;&lt;br&gt;
+  &lt;textarea id="feedback" name="feedback" rows="4" cols="50"&gt;&lt;/textarea&gt;
+&lt;/form&gt;
+
+*Phần tử Input:
+-Input kiểu text:
+Ví dụ: Ô nhập tên người dùng.
+&lt;form&gt;
+  &lt;label for="username"&gt;Tên người dùng:&lt;/label&gt;
+  &lt;input type="text" id="username" name="username"&gt;
+&lt;/form&gt;
+
+- Input kiểu email:
+Ví dụ: Ô nhập địa chỉ email.
+&lt;form&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+&lt;/form&gt;
+
+-Input kiểu date:
+Ví dụ: Ô chọn ngày sinh.
+&lt;form&gt;
+  &lt;label for="birthdate"&gt;Ngày sinh:&lt;/label&gt;
+  &lt;input type="date" id="birthdate" name="birthdate"&gt;
+&lt;/form&gt;
+</pre>
+
+      <div class="problem-box">
+        <b>Đề bài:</b>  
+         <P>Luyện tập 2 trang 44 Tin học 12: Chọn một văn bản đơn giản soạn thảo tệp HTML để hiển thị nội dung văn bản đó vẽ cây thông tin các phần tử HTML của trang web vừa soạn thảo.</P>
+
+    </div>
+
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="vi"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Văn bản về sen&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    "Trong đầm gì đẹp bằng sen, lá xanh bông trắng lại chen nhị vàng."
+&lt;/body&gt;
+&lt;/html&gt;
+ </pre>
+      
+ <pre>
+Cây thông tin:
+html
+├── head
+│   ├── meta charset="UTF-8"
+│   ├── meta viewport
+│   └── title
+└── body
+    └── "Trong đầm gì đẹp bằng sen..."
+</pre>
+
+    <h2>VẬN DỤNG</h2>
+
+    <div class="problem-box">
+    <b>Đề bài:</b>
+    <p>Vận dụng 1 trang 70 Tin học 12: Tạo một biểu mẫu đăng kí thành viên câu lạc bộ.
+</p>
+</div>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Biểu mẫu đăng ký thành viên&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Đăng ký thành viên&lt;/h2&gt;
+&lt;form action="/submit_registration" method="post"&gt;
+  &lt;label for="fullname"&gt;Họ và tên:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="text" id="fullname" name="fullname" required&gt;&lt;br&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;
+
+  &lt;label for="birthdate"&gt;Ngày sinh:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="date" id="birthdate" name="birthdate" required&gt;&lt;br&gt;
+
+  &lt;label for="membership"&gt;Loại hình thành viên:&lt;/label&gt;&lt;br&gt;
+  &lt;select id="membership" name="membership"&gt;
+    &lt;option value="basic"&gt;Thành viên cơ bản&lt;/option&gt;
+    &lt;option value="premium"&gt;Thành viên cao cấp&lt;/option&gt;
+  &lt;/select&gt;&lt;br&gt;
+
+  &lt;input type="submit" value="Đăng ký"&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+   <div class="problem-box">
+        <b>Đề bài:</b>  
+      <P>Vận dụng 2 trang 70 Tin học 12: Sửa lại mã nguồn của trang web đã viết trong Nhiệm vụ 2, Bài 11 để thêm một liên kết cho cụm từ Đăng kí. Khi nháy chuột vào liên kết, trang web đã viết ở câu 1 sẽ được hiển thị trong iframe.
+</P> 
+
+
+     </div>
+
+    <p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="vi"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Trang web nghệ thuật&lt;/title&gt;
+&lt;style&gt;
+  /* CSS để định dạng iframe */
+  iframe {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ccc;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Nghệ thuật&lt;/h1&gt;
+
+&lt;!-- Chèn ảnh minh họa --&gt;
+&lt;img src="link_den_anh_minh_hoa.jpg" alt="Hình ảnh minh họa" width="500" height="300"&gt;
+
+&lt;!-- Chèn bài hát Quốc ca --&gt;
+&lt;audio controls&gt;
+  &lt;source src="link_den_bai_hat_quoc_ca.mp3" type="audio/mpeg"&gt;
+  Trình duyệt của bạn không hỗ trợ phát audio.
+&lt;/audio&gt;
+
+&lt;!-- Thêm liên kết "Đăng kí" --&gt;
+&lt;p&gt;&lt;a href="link_den_trang_web.html" target="iframe_content"&gt;Đăng ký&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- iframe để hiển thị trang web đã viết ở câu 1 --&gt;
+&lt;iframe name="iframe_content" frameborder="0"&gt;&lt;/iframe&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+
+          </p>
+
+  </div>  
